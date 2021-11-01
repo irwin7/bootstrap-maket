@@ -1,0 +1,46 @@
+#service{
+  background-color: $color-252b;
+}
+.services {
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mp;
+    padding: 96px 0;
+    text-align: center;
+  }
+
+  &__item {
+    padding: 40px 46px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::before{
+      content: "";
+      display: inline-block;
+      width: 75px;
+      height: 60px;
+      @include bg(contain);
+      background-image: url("../../img/book.svg");
+      margin-bottom: 30px;
+    }
+    &:nth-child(2)::before{
+      background-image: url("../../img/icn-saved.svg");
+    }
+    &:nth-child(3)::before{
+      background-image: url("../../img/icn-contact.svg");
+    }
+  }
+
+  &__title {
+    @include text(700,16,24,#fff);
+    margin-bottom: 10px;
+  }
+
+  &__des {
+    @include text(500,14,20,#fff);
+  }
+}

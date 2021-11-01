@@ -1,0 +1,119 @@
+#cards{
+  background-color: $color-252b;
+}
+.cards {
+  padding: 112px 0;
+
+  &__title {
+    text-align: center;
+    @include text(700,40,57,#fff);
+    margin-bottom: 10px;
+  }
+  &__des {
+    max-width: 470px;
+    margin: 0 auto;
+    text-align: center;
+    @include text(500,14,20,#fff);
+    margin-bottom: 80px;
+  }
+  &__list {
+    @include mp;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__linear{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%);
+  }
+  &__item {
+    @include mp;
+    background-image: url("../../img/post.png");
+    @include bg(cover);
+    padding: 18px 20px;
+    max-width: 330px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+    overflow-y: hidden;
+
+    &:not(:last-child){
+      margin-right: 20px;
+    }
+  }
+  &__static-title {
+    @include mp;
+    position: relative;
+    z-index: 6;
+    @include text(600,14,24,$white);
+    margin-bottom: 15px;
+  }
+  &__text {
+    @include mp;
+    position: relative;
+    z-index: 6;
+    @include text(500,20,30,$white);
+    margin-bottom: 15px;
+  }
+  &__btn {
+    @include mp;
+    position: relative;
+    z-index: 6;
+    display: inline-block;
+    max-width: 170px;
+    padding: 10px 36px;
+    border: 1px solid;
+    border-radius: 35px;
+    background-color: $primary-color;
+    border-color: $primary-color;
+    @include text(700,14,22,#fff);
+
+    &:hover{
+      color: #fff;
+      background-color: transparent;
+      border-color: $white;
+    }
+  }
+}
+@media only screen and (max-width:1120px){
+  .cards{
+    &__list{
+      justify-content: center;
+    }
+    &__item{
+      &:last-child{
+        display: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width:992px){
+  .cards{
+    &__item{
+      &:nth-child(3){
+        display: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width:640px){
+  .cards{
+    &__item{
+      &:not(:last-child){
+        margin: 0;
+      }
+      &:nth-child(2){
+        display: none;
+      }
+    }
+  }
+}

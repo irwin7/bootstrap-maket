@@ -1,0 +1,74 @@
+#hero{
+  @include bg(cover);
+  background-image: url("../../img/background.png");
+  min-height: 100vh;
+  position: relative;
+}
+.site-hero {
+  padding-top: 110px;
+  padding-bottom: 110px;
+
+  &__title {
+    max-width: 600px;
+    @include text(800,58,80,#fff);
+    margin-bottom: 35px;
+  }
+
+  &__des {
+    max-width: 380px;
+    @include text(500,20,30,#fff);
+    margin-bottom: 35px;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  &__btn {
+    padding: 15px 36px;
+    border: 1px solid #fff;
+    border-radius: 35px;
+    @include text(700,14,22,#fff);
+
+    &:hover{
+      color: #fff;
+      background-color: $primary-color;
+      border-color: $primary-color;
+    }
+    &:first-child{
+      margin-right: 10px;
+    }
+  }
+}
+@media only screen and (max-width:600px) {
+  #hero{
+    background: $color-252b;
+  }
+  #site-hero{
+    @include bg(cover);
+    background-image: url("../../img/mini-bg.png");
+    object-fit: cover;
+  }
+  .site-hero{
+    &__title {
+      text-align: center;
+      @include text(700,48,60,#fff);
+      margin-bottom: 20px;
+    }
+    &__des {
+      text-align: center;
+      @include text(500,16,24,#fff);
+      margin-bottom: 20px;
+    }
+    &__btns {
+      flex-direction: column;
+    }
+    &__btn {
+      &:first-child{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    }
+  }
+}
