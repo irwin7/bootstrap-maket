@@ -47,7 +47,7 @@
   }
   #site-hero{
     @include bg(cover);
-    background-image: url("../../img/mini-bg.png");
+    background-image: url("../../img/cover.png");
     object-fit: cover;
   }
   .site-hero{

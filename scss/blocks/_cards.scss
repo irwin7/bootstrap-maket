@@ -46,6 +46,15 @@
     z-index: 1;
     overflow-y: hidden;
 
+    &:first-child{
+      background-image: url("../../img/post1.png");
+    }
+    &:nth-child(3){
+      background-image: url("../../img/post3.png");
+    }
+    &:nth-child(4){
+      background-image: url("../../img/post4.png");
+    }
     &:not(:last-child){
       margin-right: 20px;
     }

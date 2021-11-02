@@ -8,6 +8,10 @@
     text-align: center;
     @include text(700,40,57,#fff);
     margin-bottom: 10px;
+
+    .secondary__title{
+      display: none;
+    }
   }
   &__des {
     max-width: 470px;
@@ -69,16 +73,24 @@
 @media only screen and (max-width:768px) {
   .industry{
 
+    &__title{
+      .secondary__title{
+        display: inline-block;
+      }
+      .primary__title{
+        display: none;
+      }
+    }
+
     &__list{
       flex-direction: column;
       justify-content: stretch;
 
     }
     &__item{
-      padding-left: 40px;
 
       &::before{
-        left: -35px;
+        display: none;
       }
       &:first-child{
         margin-right: 0;

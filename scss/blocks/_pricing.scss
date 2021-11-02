@@ -31,22 +31,36 @@
     border-radius: 10px;
     padding: 50px 40px;
       margin-bottom: 36px;
+      position: relative;
     &:not(:last-child){
       margin-right: 36px;
     }
+  }
+  &__badge{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #e77c40;
+    display: flex;
+    position: absolute;
+    top: -26px;
+    right: 17px;
+    justify-content: center;
+    align-items: center;
+    @include text(700,24,32,$white);
   }
 
   &__static-title {
     text-align: center;
     @include mp;
-    @include text(500,24,32,$color-252b);
+    @include text(700,24,32,$color-252b);
     margin-bottom: 35px;
   }
 
   &__text {
     text-align: center;
     @include mp;
-    @include text(500,16,24,$color-73);
+    @include text(700,16,24,$color-73);
     margin-bottom: 35px;
   }
 
@@ -88,6 +102,10 @@
     display: flex;
     align-items: center;
 
+    &:nth-child(4) i,
+    &:nth-child(5) i{
+        color: $color-73;
+      }
     &:not(:last-child){
       margin-bottom: 15px;
     }
@@ -96,6 +114,8 @@
       font-size: 32px;
       margin-right: 10px;
       color: #2dc071;
+
+      
     }
   }
 }

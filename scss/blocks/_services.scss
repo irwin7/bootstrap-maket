@@ -11,7 +11,6 @@
     padding: 96px 0;
     text-align: center;
   }
-
   &__item {
     padding: 40px 46px;
     display: flex;
@@ -42,5 +41,22 @@
 
   &__des {
     @include text(500,14,20,#fff);
+  }
+}
+
+@media only screen and (max-width:560px) {
+  .services{
+    
+    &__item{
+      &::before{
+        background-image: url("../../img/icn-rectangle.svg");
+      }
+      &:nth-child(2)::before{
+        background-image: url("../../img/icn-rectangle.svg");
+      }
+      &:nth-child(3)::before{
+        background-image: url("../../img/icn-rectangle.svg");
+      }
+    }
   }
 }
