@@ -1,0 +1,47 @@
+#contact{
+  @include bg(cover);
+  background-image: url("../../img/blackVSwhite.png");
+}
+.contact {
+  padding: 90px 0;
+
+  &__pre-title {
+    @include mp;
+    @include text(700,16,24,$color-252b);
+  }
+
+  &__title {
+    @include mp;
+    @include text(700,40,57,$color-252b);
+    margin-bottom: 40px;
+  }
+
+  &__form{
+    max-width: 600px;
+    textarea{
+      margin-bottom: 40px;
+    }
+  }
+  &__form > *{
+    margin-bottom: 20px;
+  }
+}
+.contact-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding: 40px 0;
+
+  &__title {
+    @include text(700,24,32,$color-252b);
+  }
+
+  &__des {
+    @include text(500,14,20,$color-73);
+  }
+
+  &__btn {
+    padding: 15px 40px;
+  }
+}

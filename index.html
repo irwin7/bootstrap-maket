@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +13,6 @@
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="css/main.min.css">
 </head>
-
 <body>
   <main>
     <section id="hero">
@@ -195,8 +193,67 @@
         </div>
       </div>
     </section>
+    <section id="contact">
+      <div class="container">
+        <div class="contact">
+            <h2 class="contact__pre-title">Contact Us</h2>
+            <p class="contact__title">Make an Appointment</p>
+          <form class="contact__form row needs-validation" action="https://echo.htmlacademy.ru/">
+            <div class="col-md-6 col-xs-12">
+              <input type="text" name="fullname" class="form-control" id="validationCustom01" placeholder="Full Name * " required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <input type="email" name="email" class="form-control" id="validationCustom01" placeholder="Email * " required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <select class="form-select" name="select" id="validationCustom04" required>
+                <option selected disabled value="">Please Select</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid state.
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <select class="form-select" name="select" id="validationCustom04" required>
+                <option selected disabled value="">4:00 Available</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid state.
+              </div>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" name="message" id="validationTextarea" placeholder="Message" required></textarea>
+              <div class="invalid-feedback">
+                Please enter a message in the textarea.
+              </div>
+            </div>
+            <div class="mb-3">
+              <button class="btn btn-primary" type="submit">Book Appointment</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="contact-inner">
+      <div class="container">
+        <div class="contact-inner">
+          <div class="contact-inner__texts">
+            <h2 class="contact-inner__title">Consulting Agency For Your Business</h2>
+            <p class="contact-inner__des">the quick fox jumps over the lazy dog</p>
+          </div>
+          <a class="contact-inner__btn btn btn-primary" href="#">Contact Us</a>
+        </div>
+      </div>
+    </section>
   </main>
   <script src="js/main.js"></script>
 </body>
-
 </html>
