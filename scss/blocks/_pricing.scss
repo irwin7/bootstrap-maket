@@ -1,0 +1,118 @@
+#pricing{
+  background-color: $color-252b;
+}
+.pricing {
+  padding: 112px 0;
+
+  &__title {
+    text-align: center;
+    @include text(700,40,57,#fff);
+    margin-bottom: 10px;
+  }
+  &__des {
+    max-width: 470px;
+    margin: 0 auto;
+    text-align: center;
+    @include text(500,14,20,#fff);
+    margin-bottom: 80px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    @include mp;
+  }
+
+  &__item {
+    max-width: 330px;
+    background: $white;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    padding: 50px 40px;
+      margin-bottom: 36px;
+    &:not(:last-child){
+      margin-right: 36px;
+    }
+  }
+
+  &__static-title {
+    text-align: center;
+    @include mp;
+    @include text(500,24,32,$color-252b);
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    text-align: center;
+    @include mp;
+    @include text(500,16,24,$color-73);
+    margin-bottom: 35px;
+  }
+
+  &__cost {
+    text-align: center;
+    @include mp;
+    @include text(500,40,57,$primary-color);
+  }
+
+  &__duration {
+    text-align: center;
+    @include mp;
+    @include text(500,16,24,$color-8ec);
+    margin-bottom: 35px;
+  }
+
+  &__btn {
+    display: block;
+    background-color: $primary-color;
+    border-color: $primary-color;
+    transition: $trans;
+    margin-bottom: 35px;
+
+    &:hover{
+      background-color: $primary-color;
+      border-color: $primary-color;
+      opacity: 0.6;
+    }
+  }
+
+  &__options {
+    @include mp;
+  }
+
+  &__option {
+    height: 32px;
+    @include mp;
+    @include text(600,14,24,$color-252b);
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child){
+      margin-bottom: 15px;
+    }
+    i{
+      display: inline-block;
+      font-size: 32px;
+      margin-right: 10px;
+      color: #2dc071;
+    }
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .pricing{
+    &__item{
+      &:not(:last-child){
+        margin-right: 0;
+      }
+    }
+  }
+}
+@media only screen and (max-width : 368px) {
+  .pricing{
+    &__item{
+      padding: 40px 30px;
+    }
+  }
+}
