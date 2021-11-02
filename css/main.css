@@ -1346,4 +1346,116 @@ a {
 .contact-inner__btn {
   padding: 15px 40px;
 }
+
+.footer__up {
+  background-color: #252B42;
+  padding: 50px 0;
+}
+
+.footer__divs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.footer__lists {
+  margin: 0;
+  padding: 0;
+}
+
+.footer__item {
+  min-width: 110px;
+  margin-bottom: 25px;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #fff;
+}
+
+.footer__link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #fff;
+}
+
+.footer__down {
+  padding: 25px 0;
+}
+
+.footer__down .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__des {
+  margin: 0;
+  padding: 0;
+}
+
+.footer__socialone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__socialone-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer__socialone-link {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer__divs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .footer__down .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=main.css.map */
